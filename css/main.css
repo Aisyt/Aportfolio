@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #0E0E0E;
+    color: white;
+    font-family: Roboto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1.5em auto 0;
+
+}
+
+.header > a > img {
+    height: 30px;
+    width: 30px;
+}
+
+.header a:nth-child(2) {
+    margin-left: auto;
+}
+
+header {
+    margin: 7em auto 15em;
+    width: 80%;
+}
+
+.header2 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header p {
+   /* width: 75%; */
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+.work {
+    width: 80%;
+    margin: 0 auto 10em;
+    display: grid;
+    grid-gap: 2.5em;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.work2 {
+    width: 80%;
+    margin: 5em auto 0;
+    display: grid;
+    grid-gap: 1rem;
+
+}
+
+footer {
+    margin: 5em auto;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 970px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+
+    .work {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        margin: 7em auto 5em;
+    }
+
+}
